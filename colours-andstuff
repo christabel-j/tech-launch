@@ -1,0 +1,86 @@
+### **🟥 Headings**
+
+#### **H1 (Main Page Titles - Large, Bold)**
+
+- **Colour:** `#ff5c5c` _(Bright Red)_
+- **Font Size:** `2.5rem`
+- **Example:** `color: #ff5c5c; font-size: 2.5rem; font-weight: bold;`
+
+#### **H2 (Section Titles - Medium Bold)**
+
+- **Colour:** `#ff7b7b` _(Softer Red)_
+- **Font Size:** `2rem`
+- **Example:** `color: #ff7b7b; font-size: 2rem; font-weight: bold;`
+
+#### **H3 (Subsection Titles)**
+
+- **Colour:** `#ff99a1` _(Muted Red)_
+- **Font Size:** `1.5rem`
+- **Example:** `color: #ff99a1; font-size: 1.5rem; font-weight: bold;`
+
+#### **H4 (Small Subtitles)**
+
+- **Colour:** `#ffb3b3` _(Light Pinkish-Red)_
+- **Font Size:** `1.25rem`
+- **Example:** `color: #ffb3b3; font-size: 1.25rem; font-weight: bold;`
+
+---
+
+### **📝 Paragraphs & Text**
+
+#### **Standard Paragraphs (`<p>`)**
+
+- **Colour:** `#e0e0e0` _(Light Grey)_
+- **Font Size:** `1rem`
+- **Example:** `color: #e0e0e0; font-size: 1rem;`
+
+#### **Larger Paragraphs (For Important Sections)**
+
+- **Colour:** `#ffffff` _(White)_
+- **Font Size:** `1.2rem`
+- **Example:** `color: #ffffff; font-size: 1.2rem;`
+
+#### **Small Descriptive Text (`.small-text`)**
+
+- **Colour:** `#bbbbbb` _(Dim Grey)_
+- **Font Size:** `0.85rem`
+- **Example:** `color: #bbbbbb; font-size: 0.85rem;`
+
+---
+
+### **🔘 Buttons**
+
+#### **Primary Buttons (CTA like "Go Now")**
+
+- **Background Colour:** `#ff5c5c`
+- **Text Colour:** `#000`
+- **Hover Colour:** `#ff33cc` _(Bright Magenta)_
+- **Example:**
+
+```css
+button {
+  background-color: #ff5c5c;
+  color: #000;
+}
+button:hover {
+  background-color: #ff33cc;
+}
+```
+
+---
+
+### **🗂 Links**
+
+#### **Regular Links**
+
+- **Colour:** `#ff5c5c`
+- **Hover Colour:** `#ff33cc`
+- **Example:** `a { color: #ff5c5c; } a:hover { color: #ff33cc; }`
+
+---
+
+### **Final Notes**
+
+- **Contrast is key**: These colours ensure clear visibility against your **black background (`#000`)**.
+- **Consistency**: All headings follow a **red-to-pink gradient** from strongest (`H1`) to softest (`H4`).
+- **Accessibility Considerations**: These colours align well with colourblind modes already implemented.

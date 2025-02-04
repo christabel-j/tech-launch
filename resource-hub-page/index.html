@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resource Hub</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="company-header">
+      <div class="menu-container">
+        <div class="menu-icon" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </div>
+        <button class="accessibility-tab" onclick="toggleAccessibility()">
+          Accessibility Options
+        </button>
+      </div>
+      <div class="logo-container">
+        <img
+          src="../images/TechLaunchLogo.png"
+          alt="TechLaunch Logo"
+          class="company-logo"
+        />
+        <h1>TechLaunch by Accenture</h1>
+      </div>
+    </header>
+
+    <!-- Navigation Sidebar -->
+    <nav id="sidebar" class="sidebar hidden">
+      <button class="close-btn" onclick="toggleNav()">✖</button>
+      <ul>
+        <li><a href="../home-page/index.html">Home</a></li>
+        <li><a href="../career-page/index.html">Careers</a></li>
+        <li><a href="../questions-page/index.html">Your Questions</a></li>
+        <li><a href="../resource-hub-page/index.html">Resources</a></li>
+      </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="resource-banner">
+      <h1>Explore Our Resource Hub</h1>
+      <p>
+        Your go-to place for tech courses, apprenticeships, university guidance,
+        networking, and CV templates.
+      </p>
+    </section>
+    <!-- Accessibility Pop-up -->
+    <div id="accessibility-popup" class="accessibility-popup">
+      <h3>Accessibility Options</h3>
+
+      <!-- Colourblind Modes -->
+      <h4>Colourblind Modes</h4>
+      <label>
+        <input
+          type="radio"
+          name="colorblind-mode"
+          value="protanopia"
+          onchange="setColorblindMode('protanopia')"
+        />
+        Protanopia
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="colorblind-mode"
+          value="deuteranopia"
+          onchange="setColorblindMode('deuteranopia')"
+        />
+        Deuteranopia
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="colorblind-mode"
+          value="tritanopia"
+          onchange="setColorblindMode('tritanopia')"
+        />
+        Tritanopia
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="colorblind-mode"
+          value="none"
+          onchange="setColorblindMode('none')"
+          checked
+        />
+        None
+      </label>
+
+      <!-- Text Size Adjustment -->
+      <h4>Text Size</h4>
+      <button onclick="changeFontSize('small')">Small</button>
+      <button onclick="changeFontSize('medium')">Medium</button>
+      <button onclick="changeFontSize('large')">Large</button>
+    </div>
+
+    <!-- Page Header -->
+    <h1 class="page-header">Resource Hub</h1>
+    <p class="intro-text">
+      Your ultimate toolkit for launching and growing your tech career. Explore
+      courses, apprenticeships, university options, networking tips, and CV
+      templates—all in one place!
+    </p>
+
+    <!-- Courses Section -->
+    <section class="resource-section" id="courses-section">
+      <h2>Courses</h2>
+      <p class="section-description">
+        Kickstart your tech journey with free courses that help you build
+        in-demand skills.
+      </p>
+      <div class="grid-container">
+        <div class="course-card">
+          <h3>FreeCodeCamp</h3>
+          <p>Learn to code for free with hands-on projects.</p>
+          <a
+            href="https://www.freecodecamp.org/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="course-card">
+          <h3>Coursera</h3>
+          <p>University-level tech courses with certificates.</p>
+          <a
+            href="https://www.coursera.org/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="course-card">
+          <h3>IBM SkillsBuild</h3>
+          <p>Job-ready tech skills with IBM's free courses.</p>
+          <a
+            href="https://skillsbuild.org/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="course-card">
+          <h3>FutureLearn</h3>
+          <p>University courses from leading institutions.</p>
+          <a
+            href="https://www.futurelearn.com/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="course-card">
+          <h3>Udemy</h3>
+          <p>Affordable courses covering coding, UX, and more.</p>
+          <a
+            href="https://www.udemy.com/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="course-card">
+          <h3>JustIT</h3>
+          <p>Tech training & career support.</p>
+          <a
+            href="https://www.justit.co.uk/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="course-card">
+          <h3>Harvard CS50</h3>
+          <p>Top-rated intro to computer science.</p>
+          <a
+            href="https://pll.harvard.edu/course/cs50-introduction-computer-science"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="course-card">
+          <h3>Coding Courses Directory</h3>
+          <p>Find 100+ free coding courses in various fields.</p>
+          <a
+            href="https://www.techacademia.co.uk/free-coding-courses/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Online Work Experience Section -->
+    <section class="resource-section" id="work-experience-section">
+      <h2>Online Work Experience</h2>
+      <p class="section-description">
+        Gain practical industry experience with these online platforms.
+      </p>
+      <div class="grid-container">
+        <div class="course-card">
+          <h3>Forage</h3>
+          <p>Virtual work experience with top companies.</p>
+          <a
+            href="https://www.theforage.com/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="course-card">
+          <h3>Springpod</h3>
+          <p>Career experiences & online placements.</p>
+          <a
+            href="https://www.springpod.com/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="course-card">
+          <h3>Uptree</h3>
+          <p>Networking & industry insights for students.</p>
+          <a href="https://uptree.co/" target="_blank" class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="course-card">
+          <h3>The Brokerage</h3>
+          <p>Career support for young professionals.</p>
+          <a
+            href="https://www.thebrokerage.org.uk/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Apprenticeship Section -->
+    <section class="resource-section" id="apprenticeship-section">
+      <h2>Apprenticeships</h2>
+      <p class="section-description">
+        Learn and earn at the same time with real-world experience.
+      </p>
+      <img
+        src="../images/apprenticeship-levels.jpeg"
+        alt="Apprenticeship Levels"
+        class="img-apprenticeships"
+      />
+      <div class="grid-container">
+        <div class="apprenticeship-card">
+          <h3>Gov UK</h3>
+          <p>Official UK apprenticeship listings.</p>
+          <a
+            href="https://www.gov.uk/apply-apprenticeship"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="apprenticeship-card">
+          <h3>Apprentago</h3>
+          <p>Search for apprenticeships across industries.</p>
+          <a
+            href="https://apprentago.co.uk/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="apprenticeship-card">
+          <h3>RateMyApprenticeship</h3>
+          <p>Read reviews & find top-rated apprenticeships.</p>
+          <a
+            href="https://www.ratemyapprenticeship.co.uk/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="apprenticeship-card">
+          <h3>Not Going To Uni</h3>
+          <p>Explore career options outside university.</p>
+          <a
+            href="https://notgoingtouni.co.uk/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+        <div class="apprenticeship-card">
+          <h3>IfATE</h3>
+          <p>Institute for Apprenticeships & Technical Education.</p>
+          <a
+            href="https://www.instituteforapprenticeships.org/"
+            target="_blank"
+            class="learn-more-button"
+            >Explore →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CV Templates Section -->
+    <section class="resource-section" id="CV-section">
+      <h2>CV Templates</h2>
+      <p class="section-description">Stand out with a professional tech CV.</p>
+      <div class="CV-template-container">
+        <div class="cv-card">
+          <img
+            src="../images/cv-template-technical.png"
+            alt="Technical CV"
+            class="cv-template"
+          />
+          <h3>Technical Roles</h3>
+          <a
+            href="https://www.techacademia.co.uk/free-tech-cv-template/"
+            target="_blank"
+            class="learn-more-button"
+            >Download →</a
+          >
+        </div>
+        <div class="cv-card">
+          <img
+            src="../images/cv-template-nontechnical.png"
+            alt="Non-Technical CV"
+            class="cv-template"
+          />
+          <h3>Non-Technical Roles</h3>
+          <a
+            href="https://www.techacademia.co.uk/free-tech-cv-template/"
+            target="_blank"
+            class="learn-more-button"
+            >Download →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- University Section -->
+    <section class="resource-section" id="university-section">
+      <h2>University</h2>
+      <p class="section-description">
+        If you're a school leaver looking to pursue a university degree, here
+        are some top tech-related courses and ways to boost your employability.
+      </p>
+      <ul class="styled-list">
+        <li>
+          <strong>Computer Science:</strong> Master the foundations of coding,
+          algorithms, and problem-solving.
+        </li>
+        <li>
+          <strong>Software Engineering:</strong> Design and develop apps, games,
+          and systems.
+        </li>
+        <li>
+          <strong>Data Science:</strong> Work with big data and analytics.
+        </li>
+        <li>
+          <strong>Artificial Intelligence:</strong> Explore machine learning and
+          AI applications.
+        </li>
+        <li>
+          <strong>Cybersecurity:</strong> Protect data and systems from cyber
+          threats.
+        </li>
+      </ul>
+      <p>
+        Check <a href="https://www.ucas.com/" target="_blank">UCAS</a> for entry
+        requirements.
+      </p>
+      <p>
+        Boost your employability by joining tech societies, completing
+        internships, and taking on personal projects outside coursework.
+      </p>
+    </section>
+
+    <!-- Networking & Personal Brand Section -->
+    <section class="resource-section" id="networking-section">
+      <h2>Networking & Personal Brand</h2>
+      <h3>Websites to connect with professionals</h3>
+      <ul class="styled-list">
+        <li><a href="https://www.reddit.com/" target="_blank">Reddit</a></li>
+        <li><a href="https://slack.com/" target="_blank">Slack</a></li>
+        <li><a href="https://discord.com/" target="_blank">Discord</a></li>
+        <li>
+          <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </li>
+      </ul>
+
+      <h3>Tips for building your LinkedIn profile</h3>
+      <ul class="styled-list">
+        <li>Use a professional photo and banner.</li>
+        <li>List career and education experience.</li>
+        <li>Include relevant skills.</li>
+        <li>Customise your profile URL.</li>
+        <li>Show you're open to work.</li>
+      </ul>
+
+      <h3>Building your personal brand:</h3>
+      <ul class="styled-list">
+        <li>Have a strong personal story with a beginning, middle, and end.</li>
+        <li>
+          Give your story a short, simple, and succinct title (max 7 words).
+        </li>
+        <li>Establish authority in your brand.</li>
+      </ul>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <!-- Left Section: Company Name and Logo -->
+        <div class="footer-left">
+          <h2>TechLaunch by Accenture</h2>
+          <img
+            src="../images/TechLaunchLogo.png"
+            alt="TechLaunch by Accenture Logo"
+            class="footer-logo"
+          />
+        </div>
+
+        <!-- Middle Section: Button Links -->
+        <div class="footer-middle">
+          <a href="../questions-page/index.html" class="footer-link">FAQS</a>
+          <a href="../career-page/index.html" class="footer-link">CAREERS</a>
+          <a href="../resource-hub-page/index.html" class="footer-link"
+            >RESOURCES</a
+          >
+        </div>
+
+        <!-- Right Section: Google Maps Embed -->
+        <div class="footer-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.68038062358!2d-0.08392868422968746!3d51.51178747963438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760351608040a1%3A0xe73a3fcb92847f58!2sAccenture!5e0!3m2!1sen!2suk!4v1709144218330!5m2!1sen!2suk"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+          <p class="footer-address">
+            Accenture London Office<br />
+            30 Fenchurch Street, London, EC3M 3BD, UK
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleNav() {
+        const sidebar = document.getElementById("sidebar");
+        const menuIcon = document.querySelector(".menu-icon");
+
+        sidebar.classList.toggle("open");
+        menuIcon.classList.toggle("active");
+      }
+
+      function toggleAccessibility() {
+        document
+          .getElementById("accessibility-popup")
+          .classList.toggle("active");
+      }
+
+      function setColorblindMode(mode) {
+        document.body.classList.remove(
+          "protanopia",
+          "deuteranopia",
+          "tritanopia"
+        );
+
+        if (mode !== "none") {
+          document.body.classList.add(mode);
+        }
+      }
+
+      function changeFontSize(size) {
+        document.body.classList.remove(
+          "small-text",
+          "medium-text",
+          "large-text"
+        );
+        if (size === "small") {
+          document.body.classList.add("small-text");
+        } else if (size === "medium") {
+          document.body.classList.add("medium-text");
+        } else if (size === "large") {
+          document.body.classList.add("large-text");
+        }
+      }
+    </script>
+  </body>
+</html>

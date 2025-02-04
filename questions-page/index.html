@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Questions</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="company-header">
+      <div class="menu-container">
+        <div class="menu-icon" onclick="toggleNav()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button class="accessibility-tab" onclick="toggleAccessibility()">
+          Accessibility Options
+        </button>
+      </div>
+      <div class="logo-container">
+        <img src="../images/TechLaunchLogo.png" alt="TechLaunch Logo" class="company-logo" />
+        <h1>TechLaunch by Accenture</h1>
+      </div>
+    </header>
+
+    <!-- Navigation Sidebar -->
+    <nav id="sidebar" class="sidebar hidden">
+      <button class="close-btn" onclick="toggleNav()">✖</button>
+      <ul>
+        <li><a href="../home-page/index.html">Home</a></li>
+        <li><a href="../career-page/index.html">Careers</a></li>
+        <li><a href="../questions-page/index.html">FAQs</a></li>
+        <li><a href="../resource-hub-page/index.html">Resources</a></li>
+      </ul>
+    </nav>
+
+    <!-- Accessibility Pop-up -->
+    <div id="accessibility-popup" class="accessibility-popup">
+      <h3>Accessibility Options</h3>
+
+      <!-- Colourblind Modes -->
+      <h4>Colourblind Modes</h4>
+      <label>
+        <input type="radio" name="colorblind-mode" value="protanopia" onchange="setColorblindMode('protanopia')" />
+        Protanopia
+      </label>
+      <label>
+        <input type="radio" name="colorblind-mode" value="deuteranopia" onchange="setColorblindMode('deuteranopia')" />
+        Deuteranopia
+      </label>
+      <label>
+        <input type="radio" name="colorblind-mode" value="tritanopia" onchange="setColorblindMode('tritanopia')" />
+        Tritanopia
+      </label>
+      <label>
+        <input type="radio" name="colorblind-mode" value="none" onchange="setColorblindMode('none')" checked />
+        None
+      </label>
+
+      <!-- Text Size Adjustment -->
+      <h4>Text Size</h4>
+      <button onclick="changeFontSize('small')">Small</button>
+      <button onclick="changeFontSize('medium')">Medium</button>
+      <button onclick="changeFontSize('large')">Large</button>
+    </div>
+    <h1 class="page=header questions-h1">Your Questions</h1>
+    <p>This page will answer your burning queestions about all things tech! See our FAQs or even send us a message below!</p>
+    <!-- FAQ SECTION -->
+    <section id="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-title">Do I need a degree to get a job in tech?</h2>
+          <p class="accordion-answer">    While a degree (in computer science, engineering, etc.) can be beneficial, it’s not always necessary. Many tech companies prioritise skills and experience over formal education.
+            <br>
+            Alternatives to having a degree include:
+                bootcamps (coding bootcamps like General Assembly, Flatiron School);
+                certifications (AWS, Google Cloud, CompTIA);
+                making a portfolio (e.g., GitHub projects, freelance work);
+                online courses (recommended course providers can be found on our Resources page).
+            <br>
+            Self-taught individuals can thrive in tech by showcasing their ability through projects or contributing to open-source work.
+          </p>
+        </div>
+        <div class="accordion-item">
+              <h2 class="accordion-title">How can I get experience if I’m just starting out?</h2>
+              <p class="accordion-answer">    There are several ways to build experience without a formal job:
+                internships or apprenticeships (which are great entry points into the tech industry);
+                freelance work or volunteer projects (contributing to nonprofit websites or helping small businesses);
+                building your own projects (start a blog, create apps, or contribute to open-source projects on GitHub);
+                participating in hackathons or coding challenges (e.g., Codeforces, LeetCode, HackerRank).
+              </p>
+        </div>
+          <div class="accordion-item">
+                <h2 class="accordion-title">How much can I expect to earn in a tech career?</h2>
+                <p class="accordion-answer"> Salaries in tech careers can vary significantly based on factors such as experience, location, role, and the specific technology or industry you're working in. <br>
+                    Here are some average salary ranges for entry-level jobs in some of the main tech roles, as of 2025:
+                    Software Developer: £25,000 - £35,000; Web Developer (Front-End/Back-End): £22,000 - £32,000; Data Scientist: £30,000 - £45,000; Cybersecurity Specialist: £25,000 - £40,000;
+                    IT Support Specialist: £20,000 - £28,000; UX/UI Designer: £25,000 - £35,000; Cloud Engineer: £30,000 - £45,000.
+                </p>
+        </div>
+          <div class="accordion-item">
+                <h2 class="accordion-title">What is the best way to build a tech portfolio?</h2>
+                <p class="accordion-answer"> A solid portfolio showcases your skills and projects. <br> Here’s how to build one:
+
+                  GitHub - share your coding projects, open-source contributions, and any personal coding challenges;
+                  a personal website - build a simple website or blog where you can show off your skills, write about tech topics, and link to your GitHub;
+                  a project-based portfolio - develop real-world projects (websites, apps, games, etc.) to demonstrate what you can do;
+                  write blog posts - share technical tutorials or case studies on platforms like Medium, Dev.to, or your own website.
+                </p>
+        </div>
+          <div class="accordion-item">
+                <h2 class="accordion-title">How do I stay current with tech trends?</h2>
+                <p class="accordion-answer"> The tech industry evolves rapidly, so staying up to date is essential:
+
+                  follow industry news: websites like TechCrunch, Wired, and The Verge;
+                  listen to podcasts: examples include The Changelog, Software Engineering Daily, and Data Skeptic;
+                  join tech communities: participate in forums (like Stack Overflow, Reddit’s r/technology), Slack groups, and Discord servers;
+                  attend conferences or meetups: both virtual and in-person events help you stay ahead;
+                  take online courses: platforms like Coursera, Udemy, and edX are great for continuous learning.
+                </p>
+        </div>
+          <div class="accordion-item">
+                <h2 class="accordion-title">How can I prepare for a tech interview?</h2>
+                <p class="accordion-answer"> Tech interviews often focus on problem-solving and technical knowledge. Here’s how to prepare:
+
+                  practise coding problems: use platforms like LeetCode, HackerRank, or Codewars to practice algorithms and data structures;
+                  system design: understand how to design scalable systems, as many interviews (especially for senior roles) will involve system design questions;
+                  review common questions: for example, questions on object-oriented programming (OOP), databases, and coding syntax for your chosen language;
+                  mock interviews: practise with peers or use platforms like Pramp, Interviewing.io, or Exercism for mock interviews;
+                  prepare for behavioral questions: be ready to talk about your experiences, challenges, and how you approach problem-solving..
+                </p>
+        </div>
+        
+    </section>
+    <!-- CONTACT FORM SECTION -->
+    <section id="contact-form">
+      <div class="form-container">
+        <h1 class="heading">Contact Us</h1>
+        <form class="contact-form">
+          <div class="input-div">
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name" class="input" required>
+          </div>
+          <div class="input-div">
+            <input class="input" type="text" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="input-div">
+            <label for="category">Category</label>
+            <select id="category" name="Category" required>
+              <option value="" disabled selected>Choose a category</option>
+              <option value="Apprenticeships">Apprenticeships</option>
+              <option value="University">University</option>
+              <option value="Tech Careers">Tech Careers</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <br></br>
+          <textarea id="message" name="message" placeholder="Write your message here..."  required style="height:200px"></textarea>
+          <div class="button-div>">
+           <button type="submit" class="submit" onclick="sendEmail()">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <!-- Left Section: Company Name and Logo -->
+        <div class="footer-left">
+          <h2>TechLaunch by Accenture</h2>
+          <img src="../images/TechLaunchLogo.png" alt="TechLaunch by Accenture Logo" class="footer-logo" />
+        </div>
+
+        <!-- Middle Section: Button Links -->
+        <div class="footer-middle">
+          <a href="#" class="footer-link">FAQS</a>
+          <a href="../career-page/index.html" class="footer-link">CAREERS</a>
+          <a href="../resource-hub-page/index.html" class="footer-link">RESOURCES</a>
+        </div>
+
+        <!-- Right Section: Map and Address -->
+        <div class="footer-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.68038062358!2d-0.08392868422968746!3d51.51178747963438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760351608040a1%3A0xe73a3fcb92847f58!2sAccenture!5e0!3m2!1sen!2suk!4v1709144218330!5m2!1sen!2suk"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <p class="footer-address">
+            Accenture London Office<br />
+            30 Fenchurch Street, London, EC3M 3BD, UK
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+  <script>
+    // CONTACT FORM SCRIPT (needs testing)
+
+    function sendEmail() {
+      event.preventDefault(); //prevents page reload when submitting
+      //get users input values
+      const name = document.getElementById('fullname').value;
+      const email = document.getElementById('email').value;
+      const category = document.getElementById("category").value;
+      const message = document.getElementById('message').value;
+  
+    // Construct email subject and body
+      const subject = `Message from ${name}`;
+      const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0ACategory: ${category}%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
+
+      // Set recipient email
+      const recipient = "christabeljohnson33@gmail.com"; //using christabel's email to test!
+
+      // Create the mailto link
+      const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+      // Open the user's email client with the pre-filled email
+      window.location.href = mailtoLink;
+}
+
+    // FAQ SCRIPT
+    //start here sophie
+    
+    const accordionTitles = document.querySelectorAll(".accordion-title");
+
+    accordionTitles.forEach((accordionTitle) => {
+      accordionTitle.addEventListener("click", () => {
+        const height = accordionTitle.nextElementSibling.scrollHeight;
+        accordionTitle.classList.toggle("active-header");
+        if (accordionTitle.classList.contains("active-header")){
+          accordionTitle.nextElementSibling.style.maxHeight = `${height}rem`;
+        } else {
+          accordionTitle.nextElementSibling.style.maxHeight = "0rem";
+        }
+      });
+    });
+
+    // HEADER AND FOOTER FUNCTIONALITY
+    function toggleNav() {
+    const sidebar = document.getElementById("sidebar");
+    const menuIcon = document.querySelector(".menu-icon");
+
+    sidebar.classList.toggle("open");
+    menuIcon.classList.toggle("active");
+  }
+
+  function toggleAccessibility() {
+    document.getElementById("accessibility-popup").classList.toggle("active");
+  }
+
+  function setColorblindMode(mode) {
+    document.body.classList.remove("protanopia", "deuteranopia", "tritanopia");
+    if (mode !== "none") {
+      document.body.classList.add(mode);
+    }
+  }
+
+  function changeFontSize(size) {
+    document.body.classList.remove('small-text', 'medium-text', 'large-text');
+    if (size === 'small') {
+      document.body.classList.add('small-text');
+    } else if (size === 'medium') {
+      document.body.classList.add('medium-text');
+    } else if (size === 'large') {
+      document.body.classList.add('large-text');
+    }
+  }
+
+  </script>
+  
+</html>

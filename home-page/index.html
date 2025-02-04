@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechLaunch by Accenture</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="company-header">
+      <div class="menu-container">
+        <div class="menu-icon" onclick="toggleNav()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button class="accessibility-tab" onclick="toggleAccessibility()">
+          Accessibility Options
+        </button>
+      </div>
+      <div class="logo-container">
+        <img
+          src="../images/TechLaunchLogo.png"
+          alt="TechLaunch Logo"
+          class="company-logo"
+        />
+        <h1>TechLaunch by Accenture</h1>
+      </div>
+    </header>
+
+    <!-- Navigation Sidebar -->
+    <nav id="sidebar" class="sidebar hidden">
+      <button class="close-btn" onclick="toggleNav()">✖</button>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="../career-page/index.html">Careers</a></li>
+        <li><a href="../questions-page/index.html">Your Questions</a></li>
+        <li><a href="../resource-hub-page/index.html">Resources</a></li>
+      </ul>
+    </nav>
+
+    <!-- Accessibility Pop-up -->
+    <div id="accessibility-popup" class="accessibility-popup">
+      <h3>Accessibility Options</h3>
+
+      <!-- Colourblind Modes -->
+      <h4>Colourblind Modes</h4>
+      <label>
+        <input
+          type="radio"
+          name="colorblind-mode"
+          value="protanopia"
+          onchange="setColorblindMode('protanopia')"
+        />
+        Protanopia
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="colorblind-mode"
+          value="deuteranopia"
+          onchange="setColorblindMode('deuteranopia')"
+        />
+        Deuteranopia
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="colorblind-mode"
+          value="tritanopia"
+          onchange="setColorblindMode('tritanopia')"
+        />
+        Tritanopia
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="colorblind-mode"
+          value="none"
+          onchange="setColorblindMode('none')"
+          checked
+        />
+        None
+      </label>
+
+      <!-- Text Size Adjustment -->
+      <h4>Text Size</h4>
+      <button onclick="changeFontSize('small')">Small</button>
+      <button onclick="changeFontSize('medium')">Medium</button>
+      <button onclick="changeFontSize('large')">Large</button>
+    </div>
+
+    <!-- Mission Statement Section -->
+    <section class="mission-statement">
+      <h2>Our Mission</h2>
+      <p>"Empowering You Through What Empowers Us!"</p>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="careers-section">
+      <h1>Explore popular tech job roles</h1>
+      <button
+        class="go-now-button"
+        onclick="location.href='../career-page/index.html';"
+      >
+        Explore Careers &rarr;
+      </button>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="what-we-do">
+      <h2>Our Purpose</h2>
+      <p>
+        We are a group of future tech apprentices dedicated to guiding school
+        leavers, with a focus on empowering those with disabilities while
+        welcoming everyone. Our mission "Empowering You Through What Empowers
+        Us," reflects our commitment to sharing wisdom, insights, and advice for
+        achieving success in technology careers. Whether you're exploring
+        options or aiming for a specific role, we provide guidance on building
+        skills, excelling as a candidate, and understanding various tech paths
+        to help you shape your future.
+      </p>
+    </section>
+
+    <!-- Image Grid Wrapper -->
+    <div class="image-grid-wrapper">
+      <section class="image-grid">
+        <div class="grid-item">
+          <img src="../images/sawmanimage.jpg" alt="Placeholder 1" />
+          <h3 class="member">Sawman Jalal</h3>
+          <p>From SetBacks to SetUps</p>
+          <a
+            href="https://www.linkedin.com/in/sawmanjalal"
+            class="learn-more-button"
+            target="_blank"
+            >Learn More</a
+          >
+        </div>
+        <div class="grid-item">
+          <img src="../images/mahadimage.jpg" alt="Placeholder 2" />
+          <h3 class="member">Mahad Sheikh-Mao</h3>
+          <p>Adaptable Team PLayer with a Tech Passion</p>
+          <a
+            href="https://www.linkedin.com/in/mahad-sheikh-mao-1a3108255/"
+            class="learn-more-button"
+            target="_blank"
+            >Learn More</a
+          >
+        </div>
+        <div class="grid-item">
+          <img src="../images/kayleenimage.jpeg" alt="Placeholder 3" />
+          <h3 class="member">Kayleen-Nayla Le Roux</h3>
+          <p>Driven by Curiosity, Fueled by Creativity, always Evolving</p>
+          <a
+            href="https://www.linkedin.com/in/kayleen-nayla-le-roux-54b9b3241/"
+            class="learn-more-button"
+            target="_blank"
+            >Learn More</a
+          >
+        </div>
+        <div class="grid-item">
+          <img src="../images/christabelimagenew.jpg" alt="Placeholder 4" />
+          <h3 class="member">Christabel Johnson</h3>
+          <p>Operation: Black Girl in Tech</p>
+          <a
+            href="https://www.linkedin.com/in/christabel-johnson-0712b0255/"
+            class="learn-more-button"
+            target="_blank"
+            >Learn More</a
+          >
+        </div>
+        <div class="grid-item">
+          <img src="../images/hamzaimage.jpg" alt="Placeholder 5" />
+          <h3 class="member">Alfie Erfan</h3>
+          <p>Collaborating for success</p>
+          <a
+            href="https://www.linkedin.com/in/alfieerfan/"
+            class="learn-more-button"
+            target="_blank"
+            >Learn More</a
+          >
+        </div>
+        <div class="grid-item">
+          <img src="../images/sophieimage.jpg" alt="Placeholder 6" />
+          <h3 class="member">Sophie</h3>
+          <p>Innovation at its core</p>
+          <a href="#" class="learn-more-button" target="_blank">Learn More</a>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <!-- Left Section: Company Name and Logo -->
+        <div class="footer-left">
+          <h2>TechLaunch by Accenture</h2>
+          <img
+            src="../images/TechLaunchLogo.png"
+            alt="TechLaunch by Accenture Logo"
+            class="footer-logo"
+          />
+        </div>
+
+        <!-- Middle Section: Button Links -->
+        <div class="footer-middle">
+          <a href="../questions-page/index.html" class="footer-link">FAQS</a>
+          <a href="../career-page/index.html" class="footer-link">CAREERS</a>
+          <a href="../resource-hub-page/index.html" class="footer-link"
+            >RESOURCES</a
+          >
+        </div>
+
+        <!-- Right Section: Map and Address -->
+        <div class="footer-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.68038062358!2d-0.08392868422968746!3d51.51178747963438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760351608040a1%3A0xe73a3fcb92847f58!2sAccenture!5e0!3m2!1sen!2suk!4v1709144218330!5m2!1sen!2suk"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p class="footer-address">
+            Accenture London Office<br />
+            30 Fenchurch Street, London, EC3M 3BD, UK
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleNav() {
+        const sidebar = document.getElementById("sidebar");
+        const menuIcon = document.querySelector(".menu-icon");
+
+        sidebar.classList.toggle("open");
+        menuIcon.classList.toggle("active");
+      }
+
+      function toggleAccessibility() {
+        document
+          .getElementById("accessibility-popup")
+          .classList.toggle("active");
+      }
+
+      function setColorblindMode(mode) {
+        document.body.classList.remove(
+          "protanopia",
+          "deuteranopia",
+          "tritanopia"
+        );
+
+        if (mode !== "none") {
+          document.body.classList.add(mode);
+        }
+      }
+
+      document.querySelectorAll(".footer-link").forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          alert(`Navigating to ${event.target.textContent}`);
+        });
+      });
+      function changeFontSize(size) {
+        document.body.classList.remove(
+          "small-text",
+          "medium-text",
+          "large-text"
+        );
+
+        if (size === "small") {
+          document.body.classList.add("small-text");
+        } else if (size === "medium") {
+          document.body.classList.add("medium-text");
+        } else if (size === "large") {
+          document.body.classList.add("large-text");
+        }
+      }
+    </script>
+  </body>
+</html>

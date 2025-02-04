@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 8 Technology Careers</title>
+  
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="company-header">
+    <div class="menu-container">
+      <div class="menu-icon" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <button class="accessibility-tab" onclick="toggleAccessibility()">
+        Accessibility Options
+      </button>
+    </div>
+    <div class="logo-container">
+      <img src="../images/TechLaunchLogo.png" alt="TechLaunch Logo" class="company-logo" />
+      <h1>TechLaunch by Accenture</h1>
+    </div>
+  </header>
+
+  <!-- Navigation Sidebar -->
+  <nav id="sidebar" class="sidebar hidden">
+    <button class="close-btn" onclick="toggleNav()">✖</button>
+    <ul>
+      <li><a href="../home-page/index.html">Home</a></li>
+      <li><a href="../career-page/index.html">Careers</a></li>
+      <li><a href="../questions-page/index.html">FAQs</a></li>
+      <li><a href="../resource-hub-page/index.html">Resources</a></li>
+    </ul>
+  </nav>
+
+  <!-- Accessibility Pop-up -->
+  <div id="accessibility-popup" class="accessibility-popup">
+    <h3>Accessibility Options</h3>
+
+    <!-- Colourblind Modes -->
+    <h4>Colourblind Modes</h4>
+    <label>
+      <input type="radio" name="colorblind-mode" value="protanopia" onchange="setColorblindMode('protanopia')" />
+      Protanopia
+    </label>
+    <label>
+      <input type="radio" name="colorblind-mode" value="deuteranopia" onchange="setColorblindMode('deuteranopia')" />
+      Deuteranopia
+    </label>
+    <label>
+      <input type="radio" name="colorblind-mode" value="tritanopia" onchange="setColorblindMode('tritanopia')" />
+      Tritanopia
+    </label>
+    <label>
+      <input type="radio" name="colorblind-mode" value="none" onchange="setColorblindMode('none')" checked />
+      None
+    </label>
+
+    <!-- Text Size Adjustment -->
+    <h4>Text Size</h4>
+    <button onclick="changeFontSize('small')">Small</button>
+    <button onclick="changeFontSize('medium')">Medium</button>
+    <button onclick="changeFontSize('large')">Large</button>
+  </div>
+
+  <h1>Top 8 Technology Careers</h1>
+  <!-- encloses all of the career cards into the class card container !-->
+  <div class="card-container">
+    <!-- ROW 1 -->
+     <!-- CARD 1 -->
+     <!-- Holds the individual card -->
+    <div class="container">
+      <!-- Main card wrapper, encloses both the front and back sections of the card -->
+      <div class="card">
+       <!-- encloses the front of the card -->
+        <div class="front">
+          <!--title text for the front of the card!-->
+          <p class="front-heading">Software Developer</p>
+          <p>Write and build programs or apps for computers, websites, or mobile devices. They use coding languages like Python or JavaScript.</p>
+        </div>
+        <!-- encloses the back of the card -->
+        <div class="back">
+          <p class="back-heading">Steps to Success</p>
+          <p><ol>
+            <li>Learn a programming language like <a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Python</a> or <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">JavaScript</a></li>
+            <li>Understand CS fundamentals (algorithms, data structures) with <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a></li>
+            <li>Build projects & showcase work on <a href="https://github.com/" target="_blank">GitHub</a></li>
+            <li>Apply for apprenticeships, junior roles, or internships</li>
+          </ol></p>
+        </div>
+      </div>
+    </div>
+     <!-- CARD 2 -->
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <p class="front-heading">Web Developer</p>
+          <p>Design and build websites. Front-end developers focus on what users see, while back-end developers handle behind-the-scenes systems.</p>
+        </div>
+        <div class="back">
+          <p class="back-heading">Steps to Success</p>
+          <p><ol>
+            <li>Learn a programming language like <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Javascript</a></li>
+            <li>Learn a web developemnt language like <a href="https://www.codecademy.com/enrolled/courses/learn-html" target="_blank">HTML</a></li>
+            <li> Make a portfilo to showcase your work on platform like <a href="https://github.com/" target="_blank">GitHub</a></li>
+            <li> Apply for junior roles or apprenticeships</li> 
+          </ol></p>
+        </div>
+      </div>
+    </div>
+    <!-- card 3 -->
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <p class="front-heading">Cybersecurity Analyst</p>
+          <p> Protect companies from hackers and cyber threats by finding weaknesses in their systems and fixing them.</p>
+        </div>
+        <div class="back">
+          <p class="back-heading">Steps to Success</p>
+          <p><ol>
+            <li>Learn cybersecurity basics with <a href="https://www.codecademy.com/learn/introduction-to-cybersecurity" target="_blank">Codecademy</a></li>
+            <li>Understand networking & security with <a href="https://www.geeksforgeeks.org/computer-network-tutorials/" target="_blank">GeeksforGeeks Networking</a></li>
+            <li>Learn ethical hacking with <a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/introduction-to-ethical-hacking" target="_blank">Great Learning</a></li>
+            <li>Apply for apprenticeships, junior roles, or internships</li>
+        </ol>
+        </p>
+        </div>
+      </div>
+    </div>
+    <!-- card 4 -->
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <p class="front-heading"> Data Analyst</p>
+          <p> Collect and study data (like customer habits) to help companies make smart decisions.</p>
+        </div>
+        <div class="back">
+          <p class="back-heading">Steps to Success</p>
+          <p><ol>
+            <li>Learn data analysis basics with <a href="https://www.codecademy.com/learn/learn-data-analysis-with-python" target="_blank">Codecademy</a></li>
+            <li>Master SQL for data handling with <a href="https://www.w3schools.com/sql/" target="_blank">W3Schools SQL</a></li>
+            <li>Learn data visualization with <a href="https://www.coursera.org/professional-certificates/microsoft-data-visualization/paidmedia" target="_blank">Microsoft Data Visualization (Coursera)</a></li>
+            <li>Apply for apprenticeships, junior roles, or internships</li>
+        </ol></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-container">
+    <!-- Row 2 -->
+     <!-- card 5 -->
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <p class="front-heading">IT Support Specialist</p>
+          <p>Solve technical problems for people, like fixing broken computers or setting up software.</p>
+        </div>
+        <div class="back">
+          <p class="back-heading">Steps to Success</p>
+          <p><ol>
+            <li>Learn IT fundamentals with <a href="https://www.codecademy.com/learn/introduction-to-it" target="_blank">Codecademy</a></li>
+            <li>Understand networking basics with <a href="https://www.geeksforgeeks.org/computer-network-tutorials/" target="_blank">GeeksforGeeks Networking</a></li>
+            <li>Develop troubleshooting skills with <a href="https://www.classcentral.com/course/troubleshooting-debugging-techniques-18061" target="_blank">Troubleshooting & Debugging (Class Central)</a></li>
+            <li>Apply for apprenticeships, junior roles, or internships</li>
+        </ol>
+        </p>
+        </div>
+      </div>
+  </div>
+    <!-- card 6 -->
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <p class="front-heading">Game Developer</p>
+          <p>Design and program video games, including the graphics, gameplay, and sound.</p>
+        </div>
+        <div class="back">
+          <p class="back-heading">Steps to Success</p>
+          <p><ol>
+            <li>Learn game development basics with <a href="https://www.codecademy.com/learn/learn-c-sharp" target="_blank">Codecademy C#</a></li>
+            <li>Understand game design principles with <a href="https://www.coursera.org/learn/introduction-to-game-design/paidmedia?utm_medium=sem&utm_source=gg&utm_campaign=b2c_emea_x_multi_ftcof_career-academy_cx_dr_bau_gg_pmax_gc_s1_en_m_hyb_23-12_x&campaignid=20858198824&adgroupid=&device=c&keyword=&matchtype=&network=x&devicemodel=&creativeid=&assetgroupid=6490027433&targetid=&extensionid=&placement=&gad_source=1&gclid=Cj0KCQiA4-y8BhC3ARIsAHmjC_Eq36vlx9Inoh66R2FavNNH4Yl4RvAK5250XHSNNQHAVJq0Ag3wlzwaAt-0EALw_wcB" target="_blank">Coursera Game Design</a></li>
+            <li>Build games using **Unity** with <a href="https://learn.unity.com/pathway/junior-programmer" target="_blank">Unity Learn</a></li>
+            <li>Apply for apprenticeships, junior roles, or internships</li>
+        </ol></p>
+        </div>
+      </div>
+    </div>
+    <!-- card 7 -->
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <p class="front-heading">Cloud Engineer</p>
+          <p>Set up and manage cloud systems (like Google Drive or iCloud) to store data online.</p>
+        </div>
+        <div class="back">
+          <p class="back-heading">Steps to Success</p>
+          <p><ol>
+            <li>Learn cloud computing basics with <a href="https://www.codecademy.com/learn/learn-the-cloud" target="_blank">Codecademy Cloud Computing</a></li>
+            <li>Understand networking & security in the cloud with <a href="https://www.geeksforgeeks.org/computer-network-tutorials/" target="_blank">GeeksforGeeks Networking</a></li>
+            <li>Gain hands-on experience with AWS, Azure, or Google Cloud using <a href="https://www.cloudskillsboost.google/course_templates/47" target="_blank">Google Cloud Labs</a></li>
+            <li>Apply for apprenticeships, junior roles, or internships</li>
+        </ol>
+        </p>
+        </div>
+      </div>
+    </div>
+    <!-- card 8 -->
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <p class="front-heading">UX/UI Designer</p>
+          <p>Make apps and websites easy to use by designing layouts, buttons, and user-friendly experiences.</p>
+        </div>
+        <div class="back">
+          <p class="back-heading">Steps to Success</p>
+          <p><ol>
+            <li>Learn UI/UX fundamentals with <a href="https://www.codecademy.com/learn/visual-design" target="_blank">Codecademy Visual Design</a></li>
+            <li>Understand user research & wireframing with <a href="https://app.uxcel.com/courses/designing-wireframes" target="_blank">Uxcel Wireframing</a></li>
+            <li>Build UI designs using <a href="https://www.figma.com/resources/learn-design/" target="_blank">Figma Learning</a></li>
+            <li>Apply for apprenticeships, junior roles, or internships</li>
+        </ol></p>
+        </div>
+      </div>
+  </div>
+  <!-- comparison table -->
+  <h1>Advantages and Disadvantages of Tech Careers</h1>
+  
+  <table id="careers-table">
+    <tr>
+      <th>Career</th>
+      <th>Advantages</th>
+      <th>Disadvantages</th>
+    </tr>
+    <tr>
+      <td>Software Developer</td>
+      <td>High salary potential, remote work options, high demand</td>
+      <td>Constant learning required, long screen time</td>
+    </tr>
+    <tr>
+      <td>Web Developer</td>
+      <td>Flexible work options, creative freedom, many job opportunities</td>
+      <td>Competitive job market, need to stay updated with trends</td>
+    </tr>
+    <tr>
+      <td>Cybersecurity Analyst</td>
+      <td>Job security, high demand, critical role in data protection</td>
+      <td>High-stress environment, requires ongoing skill updates</td>
+    </tr>
+    <tr>
+      <td>Data Analyst</td>
+      <td>Strong demand, data-driven decision making, versatile career</td>
+      <td>Can be repetitive, requires strong analytical skills</td>
+    </tr>
+    <tr>
+      <td>IT Support Specialist</td>
+      <td>Entry-level friendly, hands-on problem-solving</td>
+      <td>May involve odd hours, dealing with frustrated users</td>
+    </tr>
+    <tr>
+      <td>Game Developer</td>
+      <td>Creative and rewarding, passion-driven industry</td>
+      <td>Long development cycles, crunch time stress</td>
+    </tr>
+    <tr>
+      <td>Cloud Engineer</td>
+      <td>Growing demand, strong salary potential</td>
+      <td>Requires deep technical knowledge, complex troubleshooting</td>
+    </tr>
+    <tr>
+      <td>UX/UI Designer</td>
+      <td>Combines tech and design, improving user experience</td>
+      <td>Subjective client feedback, requires design & coding skills</td>
+    </tr>
+    </table>
+  <!-- Footer Section -->
+<footer class="careers-footer">
+    <div class="footer-container">
+      <!-- Left Section: Company Name and Logo -->
+      <div class="footer-left">
+        <h2>TechLaunch by Accenture</h2>
+        <img src="../images/TechLaunchLogo.png" alt="TechLaunch by Accenture Logo" class="footer-logo" />
+      </div>
+
+      <!-- Middle Section: Button Links -->
+      <div class="footer-middle">
+        <a href="../questions-page/index.html" class="footer-link">FAQS</a>
+        <a href="../questions-page/index.html" class="footer-link">CAREERS</a>
+        <a href="../resource-hub-page/index.html" class="footer-link">RESOURCES</a>
+      </div>
+
+      <!-- Right Section: Map and Address -->
+      <div class="footer-right">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.68038062358!2d-0.08392868422968746!3d51.51178747963438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760351608040a1%3A0xe73a3fcb92847f58!2sAccenture!5e0!3m2!1sen!2suk!4v1709144218330!5m2!1sen!2suk"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <p class="footer-address">
+          Accenture London Office<br />
+          30 Fenchurch Street, London, EC3M 3BD, UK
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script>
+  function toggleNav() {
+    const sidebar = document.getElementById("sidebar");
+    const menuIcon = document.querySelector(".menu-icon");
+
+    sidebar.classList.toggle("open");
+    menuIcon.classList.toggle("active");
+  }
+
+  function toggleAccessibility() {
+    document.getElementById("accessibility-popup").classList.toggle("active");
+  }
+
+  function setColorblindMode(mode) {
+    document.body.classList.remove("protanopia", "deuteranopia", "tritanopia");
+    if (mode !== "none") {
+      document.body.classList.add(mode);
+    }
+  }
+
+  function changeFontSize(size) {
+    document.body.classList.remove('small-text', 'medium-text', 'large-text');
+    if (size === 'small') {
+      document.body.classList.add('small-text');
+    } else if (size === 'medium') {
+      document.body.classList.add('medium-text');
+    } else if (size === 'large') {
+      document.body.classList.add('large-text');
+    }
+  }
+
+</script>
+</html>
